@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusa Wise - Kapasitas Wisata (Pengelola)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans antialiased text-gray-900">
+    <div class="flex h-screen overflow-hidden">
+        
+        <aside class="w-64 bg-emerald-800 text-white flex flex-col hidden md:flex">
+            <div class="h-16 flex items-center justify-center font-bold text-xl border-b border-emerald-700">
+                Nusa Wise Pengelola
+            </div>
+            <nav class="flex-1 p-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 hover:bg-emerald-700 rounded-md transition">Tiket Masuk</a>
+                <a href="kapasitas.html" class="block px-4 py-2 bg-emerald-900 text-emerald-100 border-l-4 border-emerald-400 rounded-r-md font-medium">Kapasitas Wisata</a>
+                <a href="skor-lingkungan.html" class="block px-4 py-2 hover:bg-emerald-700 rounded-md transition">Skor Lingkungan</a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 overflow-y-auto">
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 border-b pb-4">
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-800">Manajemen Kapasitas Area</h1>
+                        <p class="text-sm text-gray-500 mt-1">Air Terjun Coban Rondo - Real-time Crowd Control</p>
+                    </div>
+                    <div class="bg-amber-100 text-amber-800 px-4 py-2 rounded-lg font-bold flex items-center gap-2 border border-amber-200">
+                        <span class="w-3 h-3 bg-amber-500 rounded-full animate-pulse"></span>
+                        Status: Hampir Penuh (85%)
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 relative overflow-hidden">
+                        <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">Wisatawan Aktif di Dalam</h3>
+                        <p class="text-5xl font-bold text-gray-800 mt-4">850</p>
+                        <p class="text-sm text-gray-500 mt-2 font-medium">Sisa Kuota: 150 Orang</p>
+                        <div class="absolute bottom-0 left-0 w-full h-2 bg-gray-100">
+                            <div class="h-full bg-amber-500" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">Estimasi Waktu Kunjung</h3>
+                        <p class="text-4xl font-bold text-gray-800 mt-4">2.5 <span class="text-xl text-gray-500">Jam</span></p>
+                        <p class="text-sm text-gray-500 mt-3">Rata-rata waktu per wisatawan</p>
+                    </div>
+                    
+                    <div class="bg-emerald-50 p-6 rounded-xl shadow-sm border border-emerald-100">
+                        <h3 class="text-emerald-800 text-xs font-bold uppercase tracking-wider">AI Recommender (Pusat)</h3>
+                        <p class="text-xl font-bold text-emerald-900 mt-4">Penerimaan Trafik Dihentikan</p>
+                        <p class="text-sm text-emerald-700 mt-2">AI sedang mengalihkan turis baru ke destinasi lain untuk mencegah *overcrowding* di area Anda.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <h2 class="text-xl font-bold text-gray-800 mb-6">Distribusi Kepadatan per Zona</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-2">
+                                <span class="text-gray-700">Zona A (Area Air Terjun Utama)</span>
+                                <span class="text-red-600 font-bold">Padat (90%)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-red-500 h-3 rounded-full" style="width: 90%"></div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">Petugas disiagakan untuk mengurai kerumunan.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-2">
+                                <span class="text-gray-700">Zona B (Area Piknik & Kafe)</span>
+                                <span class="text-amber-600 font-bold">Sedang (65%)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-amber-500 h-3 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-2">
+                                <span class="text-gray-700">Zona C (Outbound & Taman)</span>
+                                <span class="text-emerald-600 font-bold">Lengang (30%)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-emerald-500 h-3 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

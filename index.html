@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusa Wise - Dashboard Pengelola Destinasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans antialiased text-gray-900">
+    <div class="flex h-screen overflow-hidden">
+        
+        <aside class="w-64 bg-emerald-800 text-white flex flex-col hidden md:flex">
+            <div class="h-16 flex items-center justify-center font-bold text-xl border-b border-emerald-700">
+                Nusa Wise Pengelola
+            </div>
+            <nav class="flex-1 p-4 space-y-2">
+                <a href="#" class="block px-4 py-2 bg-emerald-700 rounded-md">Tiket Masuk</a>
+                <a href="kapasitas.html" class="block px-4 py-2 hover:bg-emerald-700 rounded-md">Kapasitas Wisata</a>
+                <a href="skor-lingkungan.html" class="block px-4 py-2 hover:bg-emerald-700 rounded-md">Skor Lingkungan</a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 overflow-y-auto">
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-800">Dashboard Pengelola</h1>
+                        <p class="text-sm text-gray-500 mt-1">Destinasi: Air Terjun Coban Rondo</p>
+                    </div>
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-sm font-semibold hover:bg-blue-700 transition flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        Scan Tiket QRIS
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">Tiket Terjual (Hari Ini)</h3>
+                        <div class="flex items-end mt-4">
+                            <p class="text-4xl font-bold text-gray-800">450</p>
+                            <p class="text-sm text-gray-500 ml-2 mb-1 font-medium">/ 1000 Kapasitas</p>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-4">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">Pendapatan Bersih</h3>
+                        <p class="text-4xl font-bold text-gray-800 mt-4">Rp 8.5M</p>
+                        <p class="text-xs text-emerald-600 mt-3 font-medium bg-emerald-50 inline-block px-2 py-1 rounded">*Telah dipotong retribusi PAD</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">Skor EcoWatch</h3>
+                        <div class="flex items-center mt-4">
+                            <p class="text-4xl font-bold text-emerald-500">92<span class="text-xl text-gray-400">/100</span></p>
+                            <span class="ml-4 px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">STATUS AMAN</span>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-4">Terakhir diuji: 2 Jam lalu (Data Lab + Sensor)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
